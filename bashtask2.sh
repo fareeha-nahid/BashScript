@@ -44,9 +44,9 @@ do
 	sudo ovs-vsctl --no-wait init #initialize the database
 	sudo ovs-vswitchd --pidfile --detach --log-file #Start the main Open vSwitch daemon
 
-	#sudo ovs-vsctl add-br br0
-        #sudo ovs-vsctl add-port br0 enp0s3
-	#sudo ovs-vsctl add-port br0 enp0s8
+	sudo ovs-vsctl add-br br0
+        sudo ovs-vsctl add-port br0 enp0s3
+	sudo ovs-vsctl add-port br0 enp0s8
 
 	sudo ovs-vsctl show #shows existing bridges along with ports and interfaces
 
